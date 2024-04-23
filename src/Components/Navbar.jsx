@@ -13,23 +13,23 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-blue-50 shadow-lg fixed top-0 left-0 right-0 z-50 py-1 px-6 lg:px-24 bg-opacity-50 backdrop-blur-md">
+    <div className="bg-teal-950 shadow-lg fixed top-0 left-0 right-0 z-50 py-1 px-6 lg:px-24 bg-opacity-80 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between">
         <div className={`${isMenuOpen ? "hidden" : "flex items-center"}`}>
           <Link to="/">
-            <img src={Logo} alt="Logo" className="w-16" />
+            <img src={Logo} alt="Logo" className="w-16 lg:w-14 xl:w-16" />
           </Link>
         </div>
         <ul
           className={`${
             isMenuOpen
               ? "h-screen w-screen flex flex-col items-center justify-between"
-              : "flex flex-row items-center space-x-1 ml-[] sm:space-x-6 transition-all duration-300 ease-in-out"
+              : "flex flex-row items-center space-x-1 md:space-x-4 xl:space-x-6 transition-all duration-300 ease-in-out"
           }`}
         >
           <li
             onClick={toggleMenu}
-            className={`text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer ${
+            className={`text-beige font-semibold text-lg hover:text-lime-200 transition duration-300 ease-in-out cursor-pointer ${
               isMenuOpen ? "lg:block" : "lg:hidden"
             }`}
           >
@@ -46,7 +46,7 @@ function Navbar() {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+                `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 } ${isActive ? "text-red-700" : "text-gray-900"}`
               }
@@ -58,7 +58,7 @@ function Navbar() {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+                `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 } ${isActive ? "text-red-700" : "text-gray-900"}`
               }
@@ -68,9 +68,9 @@ function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/projects"
+              to="/models"
               className={({ isActive }) =>
-                `text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+                `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 } ${isActive ? "text-red-700" : "text-gray-900"}`
               }
@@ -80,9 +80,9 @@ function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/projects"
+              to="/testimonials"
               className={({ isActive }) =>
-                `text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block ${
+                `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 } ${isActive ? "text-red-700" : "text-gray-900"}`
               }
@@ -94,7 +94,7 @@ function Navbar() {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `text-gray-900 font-semibold text-lg hover:text-blue-700 transition duration-300 ease-in-out cursor-pointer lg:block lg:mr-20 xl:mr-40 ${
+                `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg lg:mr-10 xl:mr-40 ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 } ${isActive ? "text-red-700" : "text-gray-900"}`
               }
@@ -102,23 +102,26 @@ function Navbar() {
               Contact
             </NavLink>
           </li>
-          <ul className="flex flex-row items-center space-x-1 sm:space-x-6 ">
+          <ul className="flex flex-row items-center space-x-1 sm:space-x-2">
             <li>
               <Button
-                bgColor="bg-red-600"
-                className={`lg:block px-4 py-2 ${
+                bgColor="bg-transparent"
+                className={`px-4 rounded-full text-sm font-semibold border-[2px] hover:border-black hover:bg-opacity-0 hover:text-black hover:transition-all ease-in-out duration-200 lg:block xl:px-6 ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 }`}
               >
                 SignIn
               </Button>
             </li>
-            <li
-              className={`lg:block px-4 py-2 ${
-                isMenuOpen ? "block mb-4" : "hidden"
-              }`}
-            >
-              <Button>Create Account</Button>
+            <li>
+              <Button
+                bgColor="bg-dark-green"
+                className={`px-4 rounded-full text-sm font-semibold border-[2px] hover:border-black hover:bg-opacity-0 hover:text-black hover:transition-all ease-in-out duration-200 lg:block xl:px-6 ${
+                  isMenuOpen ? "block mb-4" : "hidden"
+                }`}
+              >
+                Create Account
+              </Button>
             </li>
           </ul>
         </ul>

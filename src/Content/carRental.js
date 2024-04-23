@@ -1,4 +1,5 @@
 import HeroCar from "../assets/Hero/Car1.png";
+import HeroBG from "../assets/Hero/HomeBG1.png"
 import Logo from "../assets/Logo/Logo.png"
 import AudiA1 from "../assets/Fleet/AudiA1.png"
 import BMW320 from "../assets/Fleet/BMW320.png"
@@ -13,7 +14,8 @@ export const hero = {
     title: "Save big with our car rental",
     subtitle: "Plan your trip now",
     description: "Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.",
-    image: `${HeroCar}`
+    image: `${HeroCar}`,
+    bgImage: `${HeroBG}`
 }
 
 export const services = {
