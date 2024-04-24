@@ -17,13 +17,13 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <div className={`${isMenuOpen ? "hidden" : "flex items-center"}`}>
           <Link to="/">
-            <img src={Logo} alt="Logo" className="w-16 lg:w-14 xl:w-16" />
+            <img src={Logo} alt="Logo" className="w-16 lg:w-20 xl:w-24" />
           </Link>
         </div>
         <ul
           className={`${
             isMenuOpen
-              ? "h-screen w-screen flex flex-col items-center justify-between"
+              ? "h-screen w-screen flex flex-col items-center justify-center space-y-4"
               : "flex flex-row items-center space-x-1 md:space-x-4 xl:space-x-6 transition-all duration-300 ease-in-out"
           }`}
         >
@@ -48,7 +48,11 @@ function Navbar() {
               className={({ isActive }) =>
                 `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
-                } ${isActive ? "text-red-700" : "text-gray-900"}`
+                } ${
+                  isActive
+                    ? "text-lime-300 overline decoration-4"
+                    : "text-beige"
+                }`
               }
             >
               Home
@@ -60,7 +64,11 @@ function Navbar() {
               className={({ isActive }) =>
                 `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
-                } ${isActive ? "text-red-700" : "text-gray-900"}`
+                } ${
+                  isActive
+                    ? "text-lime-300 overline decoration-4"
+                    : "text-beige"
+                }`
               }
             >
               About
@@ -72,7 +80,11 @@ function Navbar() {
               className={({ isActive }) =>
                 `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
-                } ${isActive ? "text-red-700" : "text-gray-900"}`
+                } ${
+                  isActive
+                    ? "text-lime-300 overline decoration-4"
+                    : "text-beige"
+                }`
               }
             >
               Vehicle Model
@@ -84,7 +96,11 @@ function Navbar() {
               className={({ isActive }) =>
                 `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg ${
                   isMenuOpen ? "block mb-4" : "hidden"
-                } ${isActive ? "text-red-700" : "text-gray-900"}`
+                } ${
+                  isActive
+                    ? "text-lime-300 overline decoration-4"
+                    : "text-beige"
+                }`
               }
             >
               Testimonials
@@ -94,19 +110,23 @@ function Navbar() {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg lg:mr-10 xl:mr-40 ${
+                `text-beige font-semibold text-md hover:text-lime-300 transition duration-300 ease-in-out cursor-pointer lg:block xl:text-lg lg:mr-10 xl:mr-28 ${
                   isMenuOpen ? "block mb-4" : "hidden"
-                } ${isActive ? "text-red-700" : "text-gray-900"}`
+                } ${
+                  isActive
+                    ? "text-lime-300 overline decoration-4 transition ease-in-out duration-100"
+                    : "text-beige"
+                }`
               }
             >
               Contact
             </NavLink>
           </li>
-          <ul className="flex flex-row items-center space-x-1 sm:space-x-2">
+          <ul className="flex flex-col lg:flex-row items-center space-x-1 sm:space-x-2">
             <li>
               <Button
                 bgColor="bg-transparent"
-                className={`px-4 rounded-full text-sm font-semibold border-[2px] hover:border-black hover:bg-opacity-0 hover:text-black hover:transition-all ease-in-out duration-200 lg:block xl:px-6 ${
+                className={`px-4 py-1 rounded-full text-sm font-semibold border-[2px] hover:border-black hover:bg-opacity-0 hover:text-black hover:transition-all ease-in-out duration-200 lg:block xl:px-6  ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 }`}
               >
@@ -116,7 +136,7 @@ function Navbar() {
             <li>
               <Button
                 bgColor="bg-dark-green"
-                className={`px-4 rounded-full text-sm font-semibold border-[2px] hover:border-black hover:bg-opacity-0 hover:text-black hover:transition-all ease-in-out duration-200 lg:block xl:px-6 ${
+                className={`px-4 py-1 rounded-full text-sm font-semibold border-[2px] hover:border-black hover:bg-opacity-0 hover:text-black hover:transition-all ease-in-out duration-200 lg:block xl:px-6  ${
                   isMenuOpen ? "block mb-4" : "hidden"
                 }`}
               >

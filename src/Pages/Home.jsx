@@ -13,10 +13,10 @@ function Home() {
       <Hero />
       <Service />
       <Fleet />
-      <Banner />
+      {/* <Banner />
       <WhyChooseUs />
       <FAQ />
-      <DownloadApp />
+      <DownloadApp /> */}
     </>
   );
 }

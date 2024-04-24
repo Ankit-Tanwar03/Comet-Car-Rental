@@ -9,6 +9,9 @@ import VWGolf6 from "../assets/Fleet/VWGolf6.png"
 import VWPassat from "../assets/Fleet/VWPassat.png"
 import BannerCar from "../assets/WhyChooseUs/Cars.png"
 import DownloadAppImage from "../assets/DownloadApp/Phone.webp"
+import car from "../assets/Service/car.svg"
+import customerservice from "../assets/Service/customerservice.svg"
+import travel from "../assets/Service/travel.svg"
 
 export const hero = {
     title: "Save big with our car rental",
@@ -22,15 +25,15 @@ export const services = {
     title: "Quick & easy car rental",
     subtitle: "Plan your trip now",
     cards: [{
-        image:`${Logo}`,
+        image:`${car}`,
         title:"Select Car",
         description:"We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs"
     },{
-        image:`${Logo}`,
+        image:`${customerservice}`,
         title:"Contact Operator",
         description:"Our knowledgeable and friendly operators are always ready to help with any questions or concerns"
     },{
-        image:`${Logo}`,
+        image:`${travel}`,
         title:"Let's Drive",
         description:"Whether you're hitting the open road, we've got you covered with our wide range of cars"
     }]
@@ -42,7 +45,7 @@ export const fleet = {
     carData: [{
         image:`${AudiA1}`,
         name: "Audi A1 S-Line",
-        rent: "$45",
+        rent: "$45/per day",
         model: "Audi",
         mark: "A1",
         year: "2012",
@@ -55,7 +58,7 @@ export const fleet = {
     },{
         image:`${VWGolf6}`,
         name: "Volkswagen Golf 6",
-        rent: "$37",
+        rent: "$37/per day",
         model: "Volkswagen",
         mark: "Golf 6",
         year: "2008",
@@ -68,7 +71,7 @@ export const fleet = {
     },{
         image:`${ToyotaCamry}`,
         name: "Toyota Camry",
-        rent: "$30",
+        rent: "$30/per day",
         model: "Toyota",
         mark: "Camry",
         year: "2006",
@@ -81,7 +84,7 @@ export const fleet = {
     },{
         image:`${BMW320}`,
         name: "BMW 320 Modern Line",
-        rent: "$50",
+        rent: "$50/per day",
         model: "BMW",
         mark: "320 Modern Line",
         year: "2016",
@@ -94,7 +97,7 @@ export const fleet = {
     },{
         image:`${Mercedez}`,
         name: "Mercedez Benz GLK",
-        rent: "$55",
+        rent: "$55/per day",
         model: "Mercedez",
         mark: "GLK",
         year: "2018",
@@ -107,7 +110,7 @@ export const fleet = {
     },{
         image:`${VWPassat}`,
         name: "Volkswagen Passat CC",
-        rent: "$25",
+        rent: "$25/per day",
         model: "Volkswagen",
         mark: "Passat",
         year: "2008",

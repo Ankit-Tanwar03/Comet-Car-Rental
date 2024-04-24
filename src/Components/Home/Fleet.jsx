@@ -12,49 +12,60 @@ function Fleet() {
 
   return (
     <>
-      <div className="bg-slate-200 h-[100vh]">
-        <div className="flex flex-col justify-center items-center  mx-[100px]">
+      <div className="bg-light-beige md:h-full py-12">
+        <div className="flex flex-col justify-center items-center mx-6 lg:mx-24">
           <div className="text-center">
-            <h3>{fleet.subtitle}</h3>
-            <h1>{fleet.title}</h1>
+            <h3 className="text-dark-gray pb-6">{fleet.subtitle}</h3>
+            <h1 className="text-3xl lg:text-5xl font-semibold text-slate-950 pb-20">
+              {fleet.title}
+            </h1>
           </div>
-          <div className="flex flex-row justify-around items-center w-full h-full">
-            <div className="flex flex-col justify-around items-center h-full gap-y-6">
+          <div className="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-around items-center w-full gap-x-12">
+            <div className="flex flex-col justify-around items-center gap-y-3 lg:h-full">
               {fleet.carData.map((data, index) => (
                 <Button
                   key={index}
                   onClick={() => handleClick(index)}
-                  className="m-2 w-60"
+                  // bgColor="bg-dark-green"
+                  className={`mr-4 my-2 py-4 px-4 w-60 h-16 sm:px-8 text-sm font-semibold shadow-md shadow-dark-green hover:shadow-lg hover:shadow-dark-green hover:transition-all ease-in-out duration-300 hover:scale-105 sm:text-md rounded-sm ${
+                    index === carDesc ? "bg-slate-950" : "bg-dark-green"
+                  }`}
                 >
                   {data.name}
                 </Button>
               ))}
             </div>
-            <div>
+            <div className="w-full">
               <img
                 src={fleet.carData[carDesc].image}
-                className="w-[400px]"
-                alt=""
+                className="w-full"
+                alt={fleet.carData[carDesc].name}
               />
             </div>
             <div>
-              <div className="border border-gray-400 rounded-md">
-                <div className="flex flex-col">
+              <div className="">
+                <div className="flex flex-col justify-around items-center w-96 hover:shadow-2xl shadow-inner">
                   {Object.entries(fleet.carData[carDesc])
                     .filter(([key, value], index) => index !== 0)
                     .map(([key, value]) => (
-                      <div key={key} className="flex border-b border-gray-300">
-                        <span className="font-bold mr-2 w-[150px] py-2 border-r-2 border-gray-300 text-center">
-                          {key}:
+                      <div
+                        key={key}
+                        className="flex border border-black bg-white "
+                      >
+                        <span className="text-base font-bold w-48 lg:w-48 py-2 border-r-2 border-black text-center capitalize ">
+                          {key}
                         </span>
-                        <span className="w-[200px] py-2 text-center">
-                          {value}
-                        </span>
+                        <span className="w-48 py-2 text-center ">{value}</span>
                       </div>
                     ))}
                 </div>
               </div>
-              <Button>Reserve Now</Button>
+              <Button
+                bgColor="bg-dark-green"
+                className="mr-4 my-2 py-4 px-4 w-96 h-16 sm:px-8 text-xl text-white rounded-sm border-2 border-slate-950 font-semibold hover:bg-slate-950 hover:shadow-lg hover:shadow-dark-mustard-yellow hover:transition-all ease-in-out duration-300  sm:text-md"
+              >
+                Reserve Now
+              </Button>
             </div>
           </div>
         </div>
