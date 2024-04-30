@@ -5,117 +5,76 @@ import Button from "./Button";
 function Footer() {
   return (
     <>
-      {/* <div className="bg-slate-400">
-        <div className="flex items-start justify-center mx-[20px]">
-          <div>
-            <h1>{footerContent.title}</h1>
-            <p>{footerContent.description}</p>
-            <h3>{footerContent.phoneNo}</h3>
-            <h3></h3>
-            {footerContent.email}
-          </div>
-          <div>
-            <ul>
-              <h1>{footerContent.heading1}</h1>
-              {footerContent.list1.map((list, index) => (
-                <li key={index}>{list}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <h1>{footerContent.heading2}</h1>
-              {footerContent.list2.map((list, index) => (
-                <li key={index}>{list}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <h1>{footerContent.heading3}</h1>
-              {footerContent.list3.map((list, index) => (
-                <li key={index}>{list}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h1>{footerContent.heading4}</h1>
-            {footerContent.list4.map((list, index) => (
-              <li key={index}>{list}</li>
-            ))}
-            <input type="email" />
-            <Button>Subscribe</Button>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="bg-slate-400 py-12 lg:py-16 xl:py-20">
-        <div className="container mx-auto px-4 lg:px-8 xl:px-12">
-          <div className="flex flex-wrap justify-center lg:justify-between items-start">
-            <div className="mb-8 lg:mb-0">
-              <h1 className="text-lg lg:text-xl xl:text-2xl font-bold mb-4">
+      <div className="bg-black opacity-80 py-10 px-5">
+        <div className="flex flex-col flex-wrap xl:flex-nowrap md:flex-row items-start justify-center sm:justify-start xl:justify-center md:gap-20 lg:gap-x-32 xl:gap-6 px-4">
+          <div className="w-full md:w-1/4 pb-10 md:pb-0">
+            <div>
+              <h1 className="text-white text-lg font-semibold mb-4">
                 {footerContent.title}
               </h1>
-              <p className="text-sm lg:text-base mb-4">
-                {footerContent.description}
-              </p>
-              <h3 className="text-base lg:text-lg mb-4">
-                {footerContent.phoneNo}
-              </h3>
-              <p className="text-base lg:text-lg mb-4">{footerContent.email}</p>
+              <p className="text-white mb-4">{footerContent.description}</p>
+              <h3 className="text-white mb-4">{footerContent.phoneNo}</h3>
+              <h3 className="text-white mb-4">{footerContent.email}</h3>
             </div>
-            <div className="mb-8 lg:mb-0">
-              <ul>
-                <h1 className="text-lg lg:text-xl xl:text-2xl font-bold mb-4">
-                  {footerContent.heading1}
-                </h1>
-                {footerContent.list1.map((list, index) => (
-                  <li key={index} className="text-sm lg:text-base mb-2">
-                    {list}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mb-8 lg:mb-0">
-              <ul>
-                <h1 className="text-lg lg:text-xl xl:text-2xl font-bold mb-4">
-                  {footerContent.heading2}
-                </h1>
-                {footerContent.list2.map((list, index) => (
-                  <li key={index} className="text-sm lg:text-base mb-2">
-                    {list}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mb-8 lg:mb-0">
-              <ul>
-                <h1 className="text-lg lg:text-xl xl:text-2xl font-bold mb-4">
-                  {footerContent.heading3}
-                </h1>
-                {footerContent.list3.map((list, index) => (
-                  <li key={index} className="text-sm lg:text-base mb-2">
-                    {list}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h1 className="text-lg lg:text-xl xl:text-2xl font-bold mb-4">
-                {footerContent.heading4}
+          </div>
+          <div className="w-full md:w-1/4 pb-10 md:pb-0">
+            <ul>
+              <h1 className="text-white text-lg font-semibold mb-4">
+                {footerContent.heading1}
               </h1>
-              {footerContent.list4.map((list, index) => (
-                <li key={index} className="text-sm lg:text-base mb-2">
+              {footerContent.list1.map((list, index) => (
+                <li key={index} className="text-white mb-2">
                   {list}
                 </li>
               ))}
-              <div className="flex items-center mt-4">
+            </ul>
+          </div>
+          <div className="w-full md:w-1/4 pb-10 md:pb-0">
+            <ul>
+              <h1 className="text-white text-lg font-semibold mb-4">
+                {footerContent.heading2}
+              </h1>
+              {footerContent.list2.map((list, index) => (
+                <li key={index} className="text-white mb-2">
+                  {list}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-full md:w-1/4 pb-10 md:pb-0">
+            <ul>
+              <h1 className="text-white text-lg font-semibold mb-4">
+                {footerContent.heading3}
+              </h1>
+              {footerContent.list3.map((list, index) => (
+                <li key={index} className="text-white mb-2">
+                  {list}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-full md:w-1/4 pb-10 md:pb-0">
+            <div>
+              <h1 className="text-white text-lg font-semibold mb-4">
+                {footerContent.heading4}
+              </h1>
+              <ul>
+                {footerContent.list4.map((list, index) => (
+                  <li key={index} className="text-white mb-2">
+                    {list}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col md:flex-row md:items-center mt-4">
                 <input
                   type="email"
-                  className="border border-gray-300 rounded-l-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-500"
-                  placeholder="Enter your email"
+                  className="bg-white w-52 px-4 py-2 rounded-sm mb-2 md:flex-row md:rounded-r-none md:rounded-l-md focus:outline-none"
+                  placeholder="Your Email Address"
                 />
-                <Button className="bg-blue-500 text-white rounded-r-md px-6 py-2 ml-2 hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                <Button
+                  bgColor="bg-dark-green"
+                  className="px-4 py-2 w-52 mb-2 rounded-sm md:flex-row md:rounded-l-none md:rounded-r-md text-white"
+                >
                   Subscribe
                 </Button>
               </div>

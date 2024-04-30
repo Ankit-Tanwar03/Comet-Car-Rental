@@ -11,7 +11,7 @@ function Hero() {
   return (
     <>
       <div
-        className={`md: h-screen flex bg-contain bg-right bg-no-repeat bg-light-beige pt-24`}
+        className={`md:h-screen flex bg-contain bg-right bg-no-repeat bg-light-beige pt-24 pb-10`}
         style={{ backgroundImage: `url(${hero.bgImage})` }}
       >
         <div className="flex flex-col-reverse justify-center items-center lg:flex-row lg:justify-between px-10 lg:gap-x-20 lg:px-28 md:px-20">

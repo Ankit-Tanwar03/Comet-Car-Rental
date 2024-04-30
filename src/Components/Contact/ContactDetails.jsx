@@ -4,39 +4,21 @@ import { contactInfo } from "../../Content/contact";
 function ContactDetails() {
   return (
     <>
-      {/* <div>
-        <div className="w-[40vw] xl:h-[65vh] p-6 bg-white rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-4">{contactInfo.title}</h2>
+      <div className="w-full p-4 sm:p-6 m-6 sm:m-0 bg-light-beige rounded-lg shadow-2xl max-w-screen-xl mx-auto overflow-auto lg:h-[500px]">
+        <div className="w-full md:w-full xl:w-full">
+          <h2 className="text-xl md:text-2xl font-bold mb-4 text-slate-950">
+            {contactInfo.title}
+          </h2>
           <p className="mb-4">{contactInfo.description1}</p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
             {contactInfo.headings.map((heading, index) => (
               <div key={index}>
-                <h3 className="font-bold">{heading}</h3>
-                <p>{contactInfo.details[index]}</p>
+                <h3 className="font-bold text-slate-950">{heading}</h3>
+                <p className="text-dark-gray">{contactInfo.details[index]}</p>
               </div>
             ))}
           </div>
           <p className="mt-4">{contactInfo.description2}</p>
-        </div>
-      </div> */}
-
-      <div className="w-full px-4 sm:px-6 lg:px-8 m-6 sm:m-0">
-        <div className="max-w-screen-xl mx-auto overflow-auto">
-          <div className="w-full md:w-[40vw] xl:w-[30vw] xl:h-full p-6 bg-white ">
-            <h2 className="text-xl md:text-2xl font-bold mb-4">
-              {contactInfo.title}
-            </h2>
-            <p className="mb-4">{contactInfo.description1}</p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              {contactInfo.headings.map((heading, index) => (
-                <div key={index}>
-                  <h3 className="font-bold">{heading}</h3>
-                  <p>{contactInfo.details[index]}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-4">{contactInfo.description2}</p>
-          </div>
         </div>
       </div>
     </>

@@ -23,5 +23,13 @@ export const testimonialData = {
         image: `${Nairobi}`,
         name: "Nairobi",
         review: "Wonderful overall experience! We've been using Rentalcars for years now - everything was always very easy and fair price."
+    },{
+        image: `${Nairobi}`,
+        name: "Nairobi",
+        review: "Wonderful overall experience! We've been using Rentalcars for years now - everything was always very easy and fair price."
+    },{
+        image: `${Nairobi}`,
+        name: "Nairobi",
+        review: "Wonderful overall experience! We've been using Rentalcars for years now - everything was always very easy and fair price."
     }]
 }

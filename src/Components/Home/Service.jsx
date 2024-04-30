@@ -4,7 +4,7 @@ import { services } from "../../Content/carRental";
 function Service() {
   return (
     <>
-      <div className=" md:h-screen bg-beige">
+      <div className="bg-beige pb-12 lg:pb-24">
         <div className="flex flex-col justify-center items-center pt-24">
           <div>
             <h3 className="text-dark-gray text-xl text-center pb-6">

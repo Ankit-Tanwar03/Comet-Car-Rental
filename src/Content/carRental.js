@@ -1,6 +1,5 @@
 import HeroCar from "../assets/Hero/Car1.png";
 import HeroBG from "../assets/Hero/HomeBG1.png"
-import Logo from "../assets/Logo/Logo.png"
 import AudiA1 from "../assets/Fleet/AudiA1.png"
 import BMW320 from "../assets/Fleet/BMW320.png"
 import Mercedez from "../assets/Fleet/Mercedez.png"
@@ -12,6 +11,11 @@ import DownloadAppImage from "../assets/DownloadApp/Phone.webp"
 import car from "../assets/Service/car.svg"
 import customerservice from "../assets/Service/customerservice.svg"
 import travel from "../assets/Service/travel.svg"
+import drive from "../assets/WhyChooseUs/drive.svg"
+import pricing from "../assets/WhyChooseUs/pricing.svg"
+import charges from "../assets/WhyChooseUs/charges.svg"
+import BgImage from "../assets/WhyChooseUs/BgImage.png"
+import bgCar from "../assets/FAQ/bgCar.png"
 
 export const hero = {
     title: "Save big with our car rental",
@@ -125,20 +129,21 @@ export const fleet = {
 
 export const whyChooseUs ={
     image: `${BannerCar}`,
+    bgImage: `${BgImage}`,
     title: "Best valued deals you will ever find",
     subtitle: "Why Choose Us",
     description: "Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.",
     buttonTitle: "Find Details",
     cards: [{
-        image:`${Logo}`,
+        image:`${drive}`,
         title:"Cross Country Drive",
         description:"Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures."
     },{
-        image:`${Logo}`,
+        image:`${pricing}`,
         title:"All Inclusive Pricing",
-        description:"Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.Our knowledgeable and friendly operators are always ready to help with any questions or concerns"
+        description:"Get everything you need in one convenient, transparent price with our all-inclusive pricing policy."
     },{
-        image:`${Logo}`,
+        image:`${charges}`,
         title:"No Hidden Charges",
         description:"Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing."
     }]
@@ -147,6 +152,7 @@ export const whyChooseUs ={
 export const FAQs = {
     title:"Frequently Asked Questions",
     subtitle: "Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.",
+    image:`${bgCar}`,
     cards: [{
         Q:"1. What is special about comparing rental car deals?",
         A:" Comparing rental car deals is important as it helps find the best deal that fits your budget and requirements, ensuring you get the most value for your money. By comparing various options, you can find deals that offer lower prices, additional services, or better car models. You can find car rental deals by researching online and comparing prices from different rental companies."
@@ -169,7 +175,7 @@ export const footerContent = {
     title: "CAR Rental",
     description: "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.",
     phoneNo: "(123)-456-789",
-    email:"carrental@email.com",
+    email:"carbooking@com.com",
     heading1:"Business Center",
     heading2:"Legal Information",
     heading3:"WORKING HOURS",

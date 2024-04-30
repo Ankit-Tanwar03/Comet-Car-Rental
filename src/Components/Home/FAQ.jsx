@@ -10,29 +10,29 @@ function FAQ() {
 
   return (
     <>
-      <div className="bg-red-200 h-[100vh]">
-        <div>
-          <h1>{FAQs.title}</h1>
-          <h3>{FAQs.subtitle}</h3>
+      <div className="bg-light-beige pb-20">
+        <div className="flex flex-col items-center justify-center pt-20 mx-5 lg:mx-60 xl:mx-96">
+          <h1 className="text-slate-950 text-3xl pb-12">{FAQs.title}</h1>
+          <h3 className="text-lg pb-14">{FAQs.subtitle}</h3>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="bg-gray-200  shadow-2xl mt-[50px] w-[50vw]">
+          <div className="bg-teal-950 opacity-90 text-white shadow-2xl w-11/12 sm:w-4/5 lg:w-1/2">
             {FAQs.cards.map((card, index) => (
               <div key={index}>
                 <p
                   onClick={() => toggleAccordion(index)}
-                  className={`h-[60px] border-[1px] border-gray-300 flex justify-start items-center pl-[50px] ${
+                  className={` border-[1px] border-teal-800 flex justify-start items-center px-6 md:px-12 py-5  ${
                     activeIndex === index
-                      ? "max-h-[100px] transition-max-height duration-300 ease-in-out bg-slate-300 "
+                      ? "max-h-[100px] transition-max-height duration-300 ease-in-out bg-dark-green "
                       : "max-h-[100px] overflow-hidden transition-max-height duration-300 ease-in-out"
                   }`}
                 >
                   {card.Q}
                 </p>
                 <p
-                  className={`h-full border-gray-300  ${
+                  className={`h-full ${
                     activeIndex === index
-                      ? "opacity-100 max-h-[200px] px-[50px] py-[20px] transition-max-height duration-500 ease-in-out bg-red-200 shadow-inner shadow-blue-300 overflow-clip"
+                      ? " text-slate-950 max-h-[600px] px-10 py-10 transition-max-height duration-500 ease-in-out bg-beige shadow-inner shadow-dark-mustard-yellow overflow-clip"
                       : "opacity-0 max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out"
                   }`}
                 >
