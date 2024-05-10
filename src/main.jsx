@@ -9,7 +9,6 @@ import Contact from "./Pages/Contact.jsx";
 import VehicleModels from "./Pages/VehicleModels.jsx";
 import Testimonials from "./Pages/Testimonials.jsx";
 import ScrollToTop from "./Utility/ScrollToTop.jsx";
-import { HashRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -43,10 +42,8 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      <HashRouter>
-        <ScrollToTop />
-        <App />
-      </HashRouter>
+      <ScrollToTop />
+      <App />
     </RouterProvider>
   </React.StrictMode>
 );
