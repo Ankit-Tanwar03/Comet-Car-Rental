@@ -1,5 +1,5 @@
 import React from "react";
-import aboutContent from "../Content/about.js";
+import { aboutContent } from "../Content/about.js";
 import Service from "../Components/Home/Service.jsx";
 
 function About() {
