@@ -6,11 +6,13 @@ import Banner from "../Components/Home/Banner";
 import WhyChooseUs from "../Components/Home/WhyChooseUs";
 import FAQ from "../Components/Home/FAQ";
 import DownloadApp from "../Components/Home/DownloadApp";
+import BookNow from "../Components/Home/BookNow";
 
 function Home() {
   return (
     <>
       <Hero />
+      <BookNow />
       <Service />
       <Fleet />
       <Banner />

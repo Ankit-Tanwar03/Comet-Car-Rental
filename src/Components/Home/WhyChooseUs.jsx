@@ -3,6 +3,7 @@ import { whyChooseUs } from "../../Content/carRental";
 import Button from "../Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 function WhyChooseUs() {
   return (
@@ -29,13 +30,15 @@ function WhyChooseUs() {
             <p className="text-base lg:text-lg text-dark-gray pb-6">
               {whyChooseUs.description}
             </p>
-            <Button
-              bgColor="bg-dark-green"
-              className="mr-4 my-2 py-4 px-4 sm:px-8 text-sm font-semibold shadow-md shadow-dark-green hover:shadow-lg hover:shadow-dark-mustard-yellow hover:transition-all ease-in-out duration-300 hover:scale-105 sm:text-md"
-            >
-              {whyChooseUs.buttonTitle}
-              <FontAwesomeIcon icon={faCircleRight} className="pl-1" />
-            </Button>
+            <Link to="/models">
+              <Button
+                bgColor="bg-dark-green"
+                className="mr-4 my-2 py-4 px-4 sm:px-8 text-sm font-semibold shadow-md shadow-dark-green hover:shadow-lg hover:shadow-dark-mustard-yellow hover:transition-all ease-in-out duration-300 hover:scale-105 sm:text-md"
+              >
+                {whyChooseUs.buttonTitle}
+                <FontAwesomeIcon icon={faCircleRight} className="pl-1" />
+              </Button>
+            </Link>
           </div>
           <div className="flex flex-col justify-center items-center lg:w-1/2">
             {whyChooseUs.cards.map((card, index) => (

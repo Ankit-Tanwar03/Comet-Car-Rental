@@ -2,6 +2,8 @@ import Professor from "../assets/Testimonials/Professor.jpg"
 import Berlin from "../assets/Testimonials/Berlin.webp"
 import Tokyo from "../assets/Testimonials/Tokyo.jpg"
 import Nairobi from "../assets/Testimonials/Nairobi.jpg"
+import Denver from "../assets/Testimonials/Denver.jpg"
+import Rio from "../assets/Testimonials/Rio.jpg"
 
 export const testimonialData = {
     title: "Client's Testimonials",
@@ -22,14 +24,14 @@ export const testimonialData = {
     },{
         image: `${Nairobi}`,
         name: "Nairobi",
-        review: "Wonderful overall experience! We've been using Rentalcars for years now - everything was always very easy and fair price."
+        review: "Wonderful overall experience! We've been using Comet rental cars for years now - everything was always very easy and fair price."
     },{
-        image: `${Nairobi}`,
-        name: "Nairobi",
-        review: "Wonderful overall experience! We've been using Rentalcars for years now - everything was always very easy and fair price."
+        image: `${Denver}`,
+        name: "Denver",
+        review: " That is what I call great service! Definitely will continue sing them for my next holidays."
     },{
-        image: `${Nairobi}`,
-        name: "Nairobi",
-        review: "Wonderful overall experience! We've been using Rentalcars for years now - everything was always very easy and fair price."
+        image: `${Rio}`,
+        name: "Rio",
+        review: "The customer service was really kind and helpful. They efficiently helped me and found a solution on what car suits us."
     }]
 }

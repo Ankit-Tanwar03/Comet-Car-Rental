@@ -10,6 +10,13 @@ function Fleet() {
     setCarDesc(id);
   };
 
+  const handleButton = () => {
+    const BookNowSection = document.getElementById("Booknow");
+    if (BookNowSection) {
+      BookNowSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="bg-light-beige md:h-full lg:py-12">
@@ -59,12 +66,15 @@ function Fleet() {
                       </span>
                     </div>
                   ))}
-                <Button
-                  bgColor="bg-dark-green"
-                  className="my-6 mb-12 lg:my-2 lg:mb-0 py-4 px-4 w-80 sm:w-96 h-16 sm:px-8 text-xl text-white rounded-sm border-2 border-slate-950 font-semibold hover:bg-slate-950 hover:shadow-lg hover:shadow-dark-mustard-yellow hover:transition-all ease-in-out duration-300  sm:text-md"
-                >
-                  Reserve Now
-                </Button>
+
+                <div onClick={handleButton}>
+                  <Button
+                    bgColor="bg-dark-green"
+                    className="my-6 mb-12 lg:my-2 lg:mb-0 py-4 px-4 w-80 sm:w-96 h-16 sm:px-8 text-xl text-white rounded-sm border-2 border-slate-950 font-semibold hover:bg-slate-950 hover:shadow-lg hover:shadow-dark-mustard-yellow hover:transition-all ease-in-out duration-300  sm:text-md"
+                  >
+                    Reserve Now
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

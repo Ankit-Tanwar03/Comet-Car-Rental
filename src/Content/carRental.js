@@ -49,7 +49,7 @@ export const fleet = {
     carData: [{
         image:`${AudiA1}`,
         name: "Audi A1 S-Line",
-        rent: "$45/per day",
+        rent: "45",
         model: "Audi",
         mark: "A1",
         year: "2012",
@@ -62,7 +62,7 @@ export const fleet = {
     },{
         image:`${VWGolf6}`,
         name: "Volkswagen Golf 6",
-        rent: "$37/per day",
+        rent: "37",
         model: "Volkswagen",
         mark: "Golf 6",
         year: "2008",
@@ -75,7 +75,7 @@ export const fleet = {
     },{
         image:`${ToyotaCamry}`,
         name: "Toyota Camry",
-        rent: "$30/per day",
+        rent: "30",
         model: "Toyota",
         mark: "Camry",
         year: "2006",
@@ -88,7 +88,7 @@ export const fleet = {
     },{
         image:`${BMW320}`,
         name: "BMW 320 Modern Line",
-        rent: "$50/per day",
+        rent: "50",
         model: "BMW",
         mark: "320 Modern Line",
         year: "2016",
@@ -101,7 +101,7 @@ export const fleet = {
     },{
         image:`${Mercedez}`,
         name: "Mercedez Benz GLK",
-        rent: "$55/per day",
+        rent: "55",
         model: "Mercedez",
         mark: "GLK",
         year: "2018",
@@ -114,7 +114,7 @@ export const fleet = {
     },{
         image:`${VWPassat}`,
         name: "Volkswagen Passat CC",
-        rent: "$25/per day",
+        rent: "25",
         model: "Volkswagen",
         mark: "Passat",
         year: "2008",
@@ -125,6 +125,10 @@ export const fleet = {
         seater: "4",
         luggage: "2 Bags"
     }]
+}
+
+export const locations = {
+    cities: ["Warsaw", "Kraków", "Łódź", "Wrocław", "Poznań", "Gdańsk", "Szczecin", "Bydgoszcz", "Lublin", "Białystok", "Zakopane"]
 }
 
 export const whyChooseUs ={

@@ -12,7 +12,17 @@ import {
   faCar,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { Link } from "react-router-dom";
+
 function VehicleModels() {
+  const handleClick = () => {
+    const BookNowSection = document.getElementById("Booknow");
+    if (BookNowSection) {
+      BookNowSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+    console.log("fucntion called");
+  };
   return (
     <>
       <div className="flex flex-col items-center justify-center bg-beige pt-32 pb-20 lg:pt-32">
@@ -39,8 +49,8 @@ function VehicleModels() {
                     {card.name}
                   </p>
                   <p className="text-dark-gray text-left text-base lg:text-base">
-                    <FontAwesomeIcon icon={faSackDollar} className="pr-4" />{" "}
-                    {card.rent}
+                    <FontAwesomeIcon icon={faSackDollar} className="pr-4" /> $
+                    {card.rent}/per day
                   </p>
                   <p className="text-dark-gray text-left text-base lg:text-base">
                     <FontAwesomeIcon icon={faCar} className="pr-4" />{" "}
@@ -61,13 +71,25 @@ function VehicleModels() {
                     <FontAwesomeIcon icon={faGasPump} className="pr-4" />{" "}
                     {card.fuel}
                   </p>
-                  <Button
-                    bgColor="bg-dark-green"
-                    className="mr-4 my-2 py-4 px-4 w-full sm:px-8 text-sm font-semibold shadow-md shadow-dark-green hover:shadow-lg hover:shadow-dark-mustard-yellow hover:transition-all ease-in-out duration-300 hover:scale-105 sm:text-md"
-                  >
-                    Book Ride
-                    <FontAwesomeIcon icon={faCircleCheck} className="pl-1" />
-                  </Button>
+
+                  <Link to="/">
+                    <div
+                      onClick={() => {
+                        setTimeout(() => handleClick(), 100);
+                      }}
+                    >
+                      <Button
+                        bgColor="bg-dark-green"
+                        className="mr-4 my-2 py-4 px-4 w-full sm:px-8 text-sm font-semibold shadow-md shadow-dark-green hover:shadow-lg hover:shadow-dark-mustard-yellow hover:transition-all ease-in-out duration-300 hover:scale-105 sm:text-md"
+                      >
+                        Book Ride
+                        <FontAwesomeIcon
+                          icon={faCircleCheck}
+                          className="pl-1"
+                        />
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
