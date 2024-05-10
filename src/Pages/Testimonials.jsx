@@ -1,5 +1,5 @@
 import React from "react";
-import { testimonialData } from "../Content/testimonials";
+import { testimonialData } from "../Content/testimonials.js";
 
 const TestimonialCard = ({ image, name, review }) => {
   return (

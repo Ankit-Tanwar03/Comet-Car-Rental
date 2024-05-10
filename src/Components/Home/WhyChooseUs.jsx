@@ -1,6 +1,6 @@
 import React from "react";
-import { whyChooseUs } from "../../Content/carRental";
-import Button from "../Button";
+import { whyChooseUs } from "../../Content/carRental.js";
+import Button from "../Button.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";

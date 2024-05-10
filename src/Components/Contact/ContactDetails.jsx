@@ -1,5 +1,5 @@
 import React from "react";
-import { contactInfo } from "../../Content/contact";
+import { contactInfo } from "../../Content/contact.js";
 
 function ContactDetails() {
   return (

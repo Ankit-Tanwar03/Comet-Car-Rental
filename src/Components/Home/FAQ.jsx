@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FAQs } from "../../Content/carRental";
+import { FAQs } from "../../Content/carRental.js";
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);

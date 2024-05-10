@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "../Components/Home/Hero";
-import Service from "../Components/Home/Service";
-import Fleet from "../Components/Home/Fleet";
-import Banner from "../Components/Home/Banner";
-import WhyChooseUs from "../Components/Home/WhyChooseUs";
-import FAQ from "../Components/Home/FAQ";
-import DownloadApp from "../Components/Home/DownloadApp";
-import BookNow from "../Components/Home/BookNow";
+import Hero from "../Components/Home/Hero.jsx";
+import Service from "../Components/Home/Service.jsx";
+import Fleet from "../Components/Home/Fleet.jsx";
+import Banner from "../Components/Home/Banner.jsx";
+import WhyChooseUs from "../Components/Home/WhyChooseUs.jsx";
+import FAQ from "../Components/Home/FAQ.jsx";
+import DownloadApp from "../Components/Home/DownloadApp.jsx";
+import BookNow from "../Components/Home/BookNow.jsx";
 
 function Home() {
   return (

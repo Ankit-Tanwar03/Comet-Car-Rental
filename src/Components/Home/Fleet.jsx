@@ -1,6 +1,6 @@
 import React from "react";
-import { fleet } from "../../Content/carRental";
-import Button from "../Button";
+import { fleet } from "../../Content/carRental.js";
+import Button from "../Button.jsx";
 import { useState } from "react";
 
 function Fleet() {

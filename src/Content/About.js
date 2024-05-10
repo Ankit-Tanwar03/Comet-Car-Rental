@@ -1,4 +1,3 @@
-import Logo from "../assets/Logo/Logo.png"
 import Choice from "../assets/About/Choice.svg"
 import Outlet from "../assets/About/Outlet.svg"
 import Repair from "../assets/About/Repair.svg"

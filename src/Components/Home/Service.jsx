@@ -1,5 +1,5 @@
 import React from "react";
-import { services } from "../../Content/carRental";
+import { services } from "../../Content/carRental.js";
 
 function Service() {
   return (

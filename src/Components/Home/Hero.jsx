@@ -1,13 +1,12 @@
 import React from "react";
-import { hero } from "../../Content/carRental";
-import Button from "../Button";
+import { hero } from "../../Content/carRental.js";
+import Button from "../Button.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,
   faCircleRight,
 } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
-import BookNow from "./BookNow";
 
 function Hero() {
   const handleClick = () => {

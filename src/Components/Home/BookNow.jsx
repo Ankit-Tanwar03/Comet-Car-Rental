@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../Button";
+import Button from "../Button.jsx";
 import bgImage from "../../assets/Book Car/bgImage.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,8 +8,8 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import info from "../../assets/Book Car/info.svg";
 
-import { fleet } from "../../Content/carRental";
-import { locations } from "../../Content/carRental";
+import { fleet } from "../../Content/carRental.js";
+import { locations } from "../../Content/carRental.js";
 
 function BookNow() {
   const [selectCar, setSelectCar] = useState(fleet.carData[0].name);

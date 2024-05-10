@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../Button";
-import { downloadApp } from "../../Content/carRental";
+import Button from "../Button.jsx";
+import { downloadApp } from "../../Content/carRental.js";
 import GooglePlay from "../../assets/DownloadApp/googlePlay.svg";
 import apple from "../../assets/DownloadApp/apple.svg";
 

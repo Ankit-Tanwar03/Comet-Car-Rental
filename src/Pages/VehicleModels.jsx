@@ -1,9 +1,9 @@
 import React from "react";
-import Cards from "../Components/VehicleModels/Cards";
-import { fleet } from "../Content/carRental";
+
+import { fleet } from "../Content/carRental.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
-import Button from "../Components/Button";
+import Button from "../Components/Button.jsx";
 import {
   faSackDollar,
   faPersonWalkingLuggage,

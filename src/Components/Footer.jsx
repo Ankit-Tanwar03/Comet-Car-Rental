@@ -1,6 +1,6 @@
 import React from "react";
-import { footerContent } from "../Content/carRental";
-import Button from "./Button";
+import { footerContent } from "../Content/carRental.js";
+import Button from "./Button.jsx";
 
 function Footer() {
   return (
