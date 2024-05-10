@@ -38,14 +38,14 @@ const TestimonialCard = ({ image, name, review }) => {
 
 const Testimonials = () => {
   return (
-    <div className="bg-beige py-8 lg:px-40 px-6 pt-32">
-      <h1 className="text-center text-3xl lg:text-5xl mb-8 text-slate-950">
+    <div className="bg-beige py-8 lg:px-40 px-6 pt-20 sm:pt-32">
+      <h1 className="text-center text-3xl lg:text-5xl mb-3 sm:mb-8 text-slate-950">
         {testimonialData.title}
       </h1>
-      <h2 className="text-center text-xl lg:text-2xl mb-8 text-dark-gray">
+      <h2 className="text-center text-xl lg:text-2xl mb-3 sm:mb-8 text-dark-gray">
         {testimonialData.subtitle}
       </h2>
-      <p className=" text-center text-dark-gray mb-8 md:mb-8">
+      <p className=" text-center text-dark-gray mb-3 sm:mb-8 md:mb-8">
         {testimonialData.description}
       </p>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">

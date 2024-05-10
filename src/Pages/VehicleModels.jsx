@@ -38,11 +38,11 @@ function VehicleModels() {
   };
   return (
     <>
-      <div className="flex flex-col items-center justify-center bg-beige pt-32 pb-20 lg:pt-32">
-        <h1 className="text-3xl lg:text-5xl text-slate-950  mb-6">
+      <div className="flex flex-col items-center justify-center bg-beige pt-20 sm:pt-32 pb-20 lg:pt-32">
+        <h1 className="text-3xl lg:text-5xl text-slate-950 mb-2 sm:mb-6">
           Explore Cars
         </h1>
-        <p className="mt-5 mb-10 text-xl lg:text-xl text-dark-gray text-center font-medium">
+        <p className="mt-2 sm:mt-5 mb-3 sm:mb-10 text-xl lg:text-xl text-dark-gray text-center font-medium">
           Let's drive to happiness
         </p>
         <div className="flex flex-row flex-wrap items-center justify-center px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">

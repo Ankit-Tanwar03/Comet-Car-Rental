@@ -18,7 +18,7 @@ function About() {
   }, []);
   return (
     <>
-      <div className="bg-light-beige pb-12 pt-32 lg:pb-24">
+      <div className="bg-light-beige pb-12 pt-20 sm:pt-32 lg:pb-24">
         <div className="container mx-auto px-4 lg:px-0">
           <h3 className="text-lg lg:text-xl text-center text-dark-gray mb-6 lg:mb-10">
             {aboutContent.title}
