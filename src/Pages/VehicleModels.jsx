@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import { fleet } from "../Content/carRental.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
@@ -15,6 +14,20 @@ import {
 import { Link } from "react-router-dom";
 
 function VehicleModels() {
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }
+
+    scrollToTop();
+    return () => {
+      window.removeEventListener("load", scrollToTop);
+    };
+  }, []);
+
   const handleClick = () => {
     const BookNowSection = document.getElementById("Booknow");
     if (BookNowSection) {

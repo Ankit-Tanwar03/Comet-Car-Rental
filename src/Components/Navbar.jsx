@@ -12,6 +12,10 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="bg-teal-950 shadow-lg fixed top-0 left-0 right-0 z-50 py-1 px-6 lg:px-24 bg-opacity-80 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between">
@@ -54,6 +58,7 @@ function Navbar() {
                     : "text-beige"
                 }`
               }
+              onClick={closeMenu}
             >
               Home
             </NavLink>
@@ -70,6 +75,7 @@ function Navbar() {
                     : "text-beige"
                 }`
               }
+              onClick={closeMenu}
             >
               About
             </NavLink>
@@ -86,6 +92,7 @@ function Navbar() {
                     : "text-beige"
                 }`
               }
+              onClick={closeMenu}
             >
               Vehicle Model
             </NavLink>
@@ -102,6 +109,7 @@ function Navbar() {
                     : "text-beige"
                 }`
               }
+              onClick={closeMenu}
             >
               Testimonials
             </NavLink>
@@ -118,6 +126,7 @@ function Navbar() {
                     : "text-beige"
                 }`
               }
+              onClick={closeMenu}
             >
               Contact
             </NavLink>

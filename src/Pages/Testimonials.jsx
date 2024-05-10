@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { testimonialData } from "../Content/testimonials.js";
 
 const TestimonialCard = ({ image, name, review }) => {
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }
+
+    scrollToTop();
+    return () => {
+      window.removeEventListener("load", scrollToTop);
+    };
+  }, []);
   return (
     <div className="h-80 sm:h-96 rounded-lg shadow-2xl my-4 bg-light-beige overflow-hidden">
       <div className="px-6 pt-8">
@@ -32,7 +45,7 @@ const Testimonials = () => {
       <h2 className="text-center text-xl lg:text-2xl mb-8 text-dark-gray">
         {testimonialData.subtitle}
       </h2>
-      <p className=" text-center text-dark-gray mb-8 md:mb-16">
+      <p className=" text-center text-dark-gray mb-8 md:mb-8">
         {testimonialData.description}
       </p>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">

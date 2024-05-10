@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Form from "../Components/Contact/Form.jsx";
 import ContactDetails from "../Components/Contact/ContactDetails.jsx";
 
 function Contact() {
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }
+
+    scrollToTop();
+    return () => {
+      window.removeEventListener("load", scrollToTop);
+    };
+  }, []);
   return (
     <>
       <div className="p-6 md:p-8 lg:p-20 xl:p-32 bg-beige">

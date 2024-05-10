@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { aboutContent } from "../Content/about.js";
 import Service from "../Components/Home/Service.jsx";
 
 function About() {
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }
+
+    scrollToTop();
+    return () => {
+      window.removeEventListener("load", scrollToTop);
+    };
+  }, []);
   return (
     <>
       <div className="bg-light-beige pb-12 pt-32 lg:pb-24">

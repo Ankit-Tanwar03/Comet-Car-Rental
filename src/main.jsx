@@ -8,7 +8,6 @@ import About from "./Pages/About.jsx";
 import Contact from "./Pages/Contact.jsx";
 import VehicleModels from "./Pages/VehicleModels.jsx";
 import Testimonials from "./Pages/Testimonials.jsx";
-import ScrollToTop from "./Utility/ScrollToTop.jsx";
 
 const router = createBrowserRouter([
   {
@@ -42,7 +41,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      <ScrollToTop />
       <App />
     </RouterProvider>
   </React.StrictMode>

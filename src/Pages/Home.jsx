@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../Components/Home/Hero.jsx";
 import Service from "../Components/Home/Service.jsx";
 import Fleet from "../Components/Home/Fleet.jsx";
@@ -9,6 +9,20 @@ import DownloadApp from "../Components/Home/DownloadApp.jsx";
 import BookNow from "../Components/Home/BookNow.jsx";
 
 function Home() {
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }
+
+    scrollToTop();
+    return () => {
+      window.removeEventListener("load", scrollToTop);
+    };
+  }, []);
+
   return (
     <>
       <Hero />

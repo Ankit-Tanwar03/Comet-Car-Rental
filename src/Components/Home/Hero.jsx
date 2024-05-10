@@ -18,19 +18,21 @@ function Hero() {
   return (
     <>
       <div
-        className={`md:h-screen flex bg-contain bg-right bg-no-repeat bg-light-beige pt-24 pb-10`}
+        className={`h-screen md:h-screen bg-contain bg-right bg-no-repeat bg-light-beige pt-24 pb-10`}
         style={{ backgroundImage: `url(${hero.bgImage})` }}
       >
         <div className="flex flex-col-reverse justify-center items-center lg:flex-row lg:justify-between px-10 lg:gap-x-20 lg:px-28 md:px-20">
           <div className="lg:flex-1">
-            <h3 className="text-dark-gray text-xl font-semibold pb-6 pt-6">
+            <h3 className="text-dark-gray text-md sm:text-xl font-semibold pb-2 sm:pb-6 pt-6">
               {hero.subtitle}
             </h3>
-            <h1 className="text-slate-950 text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold pb-6 leading-tight">
+            <h1 className="text-slate-950 text-xl md:text-4xl lg:text-5xl xl:text-7xl font-bold pb-2 sm:pb-6 leading-tight">
               {hero.title}
             </h1>
-            <p className="text-dark-gray text-base pb-6">{hero.description}</p>
-            <div className="pt-4 flex">
+            <p className="text-dark-gray text-sm sm:text-base pb-2 sm:pb-6">
+              {hero.description}
+            </p>
+            <div className="lg:pt-4 flex">
               <div onClick={handleClick}>
                 <Button
                   bgColor="bg-dark-green"
@@ -53,11 +55,11 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="lg:flex-1 lg:pl-10 pt-20 lg:pt-0">
+          <div className="lg:flex-1 lg:pl-10 ">
             <img
               src={hero.image}
               alt="Herocar"
-              className="w-[200px] md:w-[300px] lg:w-[600px]"
+              className="w-[200px] md:w-[300px] lg:w-[600px] pt-32 lg:pt-0"
             />
           </div>
         </div>

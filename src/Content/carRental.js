@@ -179,7 +179,7 @@ export const footerContent = {
     title: "CAR Rental",
     description: "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.",
     phoneNo: "(123)-456-789",
-    email:"carbooking@com.com",
+    email:"carbooking@comet.com",
     heading1:"Business Center",
     heading2:"Legal Information",
     heading3:"WORKING HOURS",
